@@ -1,0 +1,54 @@
+<!doctype html>
+			<html>
+				<head>
+					<meta charset="UTF-8">
+					<meta name="robots" content="noindex, nofollow">
+					<style>h1 {color: #609ae9;}</style>
+					<script>
+						window.onload=function(){};
+						window.onerror=function(message){document.getElementsByTagName('body')[0].innerText='ERROR: '+message};
+					</script>
+				</head>
+				<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그러데이션</title>
+</head>
+<style>
+    li{
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .radial1{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+        background: blue;
+        background: radial-gradient(circle at 20% 20%,white,blue);
+    }
+    .repeat1{
+        background:red;
+        background:repeating-linear-gradient(yellow,red 20px);
+    }
+    .repeat2{
+        background: #ccc;
+        background:repeating-radial-gradient(circle,white,#ccc 10%);
+    }
+</style>
+<body>
+    <h3>1.위치키워드를 사용한 원형 그러데이션 만들기</h3>
+    <div class="radial1"></div>
+    <h3>2.그러데이션 반복하기</h3>
+    <ul>
+        <li class="repeat1"></li>
+        <li class="repeat2"></li>
+    </ul>
+</body>
+</html></body>
+			</html>
