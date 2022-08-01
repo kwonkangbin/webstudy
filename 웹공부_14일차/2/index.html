@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: url('./images/bg0.jpg');
+        background-size: cover;
+        display: flex;
+       /*justify-content: center;
+				align-items: center;
+			*/
+        height: 100vh;
+    }
+</style>
+<body id="content">
+    <button onclick="jc()">주축 가운데 정렬!</button>
+    <button onclick="ac()">교차축 가운데 정렬!</button>
+	
+	<script>
+	let contantEl=document.getElementById("content");
+		function jc(){
+			contantEl.style.justifyContent="center";
+		}
+		function ac(){
+			contantEl.style.alignItems="center";
+		}
+	</script>
+</body>
+</html>
