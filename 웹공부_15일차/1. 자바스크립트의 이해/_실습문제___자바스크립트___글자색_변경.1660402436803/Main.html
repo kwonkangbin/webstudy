@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>글자색 바꾸기</title>
+</head>
+<script>
+		let sl = "red";
+    function colorChange() {
+			if(sl=="red"){
+				document.getElementById("heading").style.color="blue";
+				sl = "blue";
+			}
+      else if(sl=="blue"){
+				document.getElementById("heading").style.color="red";
+				sl = "red";
+			}			  
+    }
+</script>
+<body>
+    <h1 id="heading" onclick="colorChange()">지금 우리 학교는</h1>
+    <p id="text">텍스트를 클릭해 보세요</p>
+</body>
+
+</html>
