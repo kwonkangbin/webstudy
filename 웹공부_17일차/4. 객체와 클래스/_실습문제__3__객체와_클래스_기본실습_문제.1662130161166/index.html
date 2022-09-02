@@ -1,0 +1,52 @@
+<!doctype html>
+			<html>
+				<head>
+					<meta charset="UTF-8">
+					<meta name="robots" content="noindex, nofollow">
+					<style></style>
+					<script>
+						window.onload=function(){};
+						window.onerror=function(message){document.getElementsByTagName('body')[0].innerText='ERROR: '+message};
+					</script>
+				</head>
+				<body><html>
+  <head>
+    <meta charset="UTF-8">
+     <style>
+      #res{
+        width: 600px;
+        height:200px;
+        background-color: bisque;
+        border: 2px solid dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="res"></div>
+    <script>
+        let res = document.getElementById("res");
+        let test = `<h1>객체외 사용과 this 연산자</h1>`
+		const pet = {
+            name : "구름",
+            age : 12,
+            eat : function(food){
+                test+="<h3>"+this.name+"이",food+"를 먹었습니다.";
+                res.innerHTML=test;
+            }
+        }					 
+        pet.eat("밥");
+
+        const person ={
+            name:'권강빈',
+            hobby:'코딩',
+            hope:'멋진 개발자',
+            show :function(){
+                test+="<h3>name = "+this.name+'은'+this.hobby+'를 합니다.'
+                res.innerHTML=test;
+            }
+        }
+        person.show();
+    </script>
+</body>
+</html></body>
+			</html>
